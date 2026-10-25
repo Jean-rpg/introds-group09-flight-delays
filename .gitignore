@@ -10,10 +10,11 @@ __pycache__/
 
 # Raw data
 data/raw/*
-!data/raw/.gitkeep
 
-# Full working dataset
-data/processed/flights_working.csv
+# Processed data
+data/processed/*
+
+
 
 # VS Code settings
 .vscode/
