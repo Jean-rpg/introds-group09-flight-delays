@@ -1,1 +1,19 @@
-data
+# Python environments
+.venv/
+.venv312/
+venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Raw data
+data/raw/*
+!data/raw/.gitkeep
+
+# Full working dataset
+data/processed/flights_working.csv
+
+# VS Code settings
+.vscode/

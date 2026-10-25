@@ -1,0 +1,21 @@
+Column,Type,Non-null,Missing,Missing %,Range or distinct values
+year,int64,336776,0,0.0,"2,013 to 2,013"
+month,int64,336776,0,0.0,1 to 12
+day,int64,336776,0,0.0,1 to 31
+dep_time,float64,328521,8255,2.45,"1 to 2,400"
+sched_dep_time,int64,336776,0,0.0,"106 to 2,359"
+dep_delay,float64,328521,8255,2.45,"-43 to 1,301"
+arr_time,float64,328063,8713,2.59,"1 to 2,400"
+sched_arr_time,int64,336776,0,0.0,"1 to 2,359"
+arr_delay,float64,327346,9430,2.8,"-86 to 1,272"
+carrier,object,336776,0,0.0,16 distinct
+flight,int64,336776,0,0.0,"1 to 8,500"
+tailnum,object,334264,2512,0.75,"4,043 distinct"
+origin,object,336776,0,0.0,3 distinct
+dest,object,336776,0,0.0,105 distinct
+air_time,float64,327346,9430,2.8,20 to 695
+distance,int64,336776,0,0.0,"17 to 4,983"
+hour,int64,336776,0,0.0,1 to 23
+minute,int64,336776,0,0.0,0 to 59
+time_hour,object,336776,0,0.0,"6,936 distinct"
+name,object,336776,0,0.0,16 distinct

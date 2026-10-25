@@ -1,0 +1,13 @@
+Decision,Check,Action,Reason
+1,Airline merge,Validate a many-to-one left join; retain every flight.,Add airline names without duplicating or losing flight records.
+2,Whole-number fields,Convert five verified whole-number columns to nullable Int64.,Represent integers correctly while preserving missing values.
+3,time_hour,Parse UTC timestamps and convert to America/New_York.,"Use local dates consistently with year, month and day."
+4,Clock times,Convert 2400 to 0 in new clock columns; keep original columns.,Represent midnight consistently without losing source values.
+5,Missing departure time,Create a cancellation-proxy flag; retain records.,Record missing departures without claiming confirmed cancellation.
+6,Missing tailnum,Keep missing values; do not impute.,The aircraft identifier cannot be reliably inferred.
+7,Missing arrival delay,Flag records with departure time but no arrival delay.,Do not treat missing outcomes as zero delay or confirmed diversion.
+8,Extreme and negative delays,Retain values after checking clock consistency.,Negative delays represent early flights; extremes alone do not prove error.
+9,Duplicates,Check exact rows and the flight key; remove no rows.,Neither check identified duplicates.
+10,Route distance differences,Retain original distances.,Small differences alone do not justify replacing source values.
+11,Distance / air_time,Inspect unusually high and low speed estimates; retain records.,These estimates alone are insufficient evidence of data errors.
+12,Categorical fields,"Check whitespace, code case and constant columns; retain values.",Checks found no formatting changes needed; year identifies the study period.
