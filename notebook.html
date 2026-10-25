@@ -7793,6 +7793,32 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
+<style>
+@media print {
+  .jp-OutputArea-output,
+  .jp-RenderedHTMLCommon,
+  .jp-InputArea-editor,
+  .highlight {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  table {
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+
+  th, td {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+</style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
