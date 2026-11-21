@@ -168,3 +168,14 @@ Check that all code, text and outputs are visible.
 
 The environment includes `setuptools<81` because `nycflights13==0.0.3`
 depends on `pkg_resources`.
+
+## D3 — Flight Delay Analysis
+
+Open [descriptive_statistics_d3.ipynb](descriptive_statistics_d3.ipynb) for the D3 analysis.
+
+To reproduce the results, install the dependencies from `requirements.txt`
+using the setup steps above. Open the D3 notebook in VS Code, select the
+Python environment you set up, and click **Run All**.
+
+No random seed is required because the analysis does not use random sampling
+or other randomized steps.
