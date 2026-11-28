@@ -80,6 +80,18 @@ for VS Code.
 py -3.12 -m venv .venv312
 .\.venv312\Scripts\python.exe -m pip install -r requirements.txt
 ```
+macOS / Linux (Terminal):
+```bash
+python3.12 -m venv .venv312
+source .venv312/bin/activate
+pip install -r requirements.txt
+```
+
+The requirements file records the group's Windows environment.
+Other operating systems may require adjustments to platform-specific
+packages. 
+The macOS commands above were tested with Python 3.12.10
+and all libraries in `requirements.txt` installed without errors.
 
 The requirements file records the group's Windows environment.
 Other operating systems may require adjustments to platform-specific
