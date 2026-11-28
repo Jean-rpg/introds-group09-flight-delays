@@ -88,8 +88,6 @@ pip install -r requirements.txt
 ```
 
 The requirements file records the group's Windows environment.
-Other operating systems may require adjustments to platform-specific
-packages. 
 The macOS commands above were tested with Python 3.12.10
 and all libraries in `requirements.txt` installed without errors.
 
